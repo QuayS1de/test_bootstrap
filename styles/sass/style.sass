@@ -1,0 +1,207 @@
+$--color1: #05b1b1
+$--color2: #52339a
+
+.--color1
+    color: #05b1b1
+
+.--color2
+    color: #52339a !important
+
+body
+    background: #fff
+    overflow-x: hidden
+    color: #fff
+
+header,
+section
+    padding: 100px 0
+
+footer
+    padding: 50px 0
+
+header
+    padding: 200px 0
+
+header,
+footer
+    background: url('../../img/pattern.png'), $--color1
+    background: url('../../img/pattern.png'), linear-gradient(90deg, rgba(82,51,154,1) 0%, rgba(111,76,173,1) 53%, rgba(5,177,177,1) 100%)
+
+.itd_play
+    background-color: $--color1
+    width: 60px
+    height: 60px
+    border-radius: 50%
+    display: flex
+    justify-content: center
+    align-items: center
+    cursor: pointer
+    margin: 30px auto
+    transition: all 0.2s ease
+    &:hover
+        background-color: $--color2
+
+.itd_triangle
+    margin-left: 3px
+    width: 0
+    height: 0
+    border-style: solid
+    border-width: 10px 0 10px 20px
+    border-color: transparent transparent transparent #fff
+
+.btn-itd
+    max-width: 200px
+    display: block
+    margin: 0 auto
+    padding: 8px 30px
+    color: #fff
+    background-color: $--color2
+    transition: all .2s ease-in
+    &:hover
+        background-color: $--color1
+        transition: .1s ease-out
+
+.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+.container
+    padding: 0
+    .line
+        width: 30%
+        margin: 20px auto 50px
+        height: 3px
+        background-color: $--color1
+
+.circle_itd
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    margin: 0 auto 15px
+    width: 70px
+    height: 70px
+    border-radius: 50%;
+    border: 3px solid $--color2
+    i
+        font-size: 25px
+        color: $--color2
+
+.square
+    padding: 5px
+    p
+        border: 2px solid $--color1
+        padding: 50px
+        margin: auto
+        font-size: 18px
+        font-weight: 500
+
+
+.accordion
+    &-button
+        font-family: Montserrat, sans-serif
+        background-color: #3c27b4
+        color: #fff
+    &-item
+        border-color: #2b2b2b
+    &-button:not(.collapsed)
+        color: #fff
+        background-color: $--color2
+    &-body
+        color: #000
+
+
+.row-tables
+    width: 75%
+    margin: 0 auto
+    &-title
+        padding-top: 100px
+
+
+section
+    position: relative
+    z-index: 10
+    background-image: linear-gradient(180deg, rgb(34, 0, 27), rgb(21, 17, 84) 100%);
+    background: -webkit-linear-gradient(180deg, rgb(34, 0, 27), rgb(21, 17, 84) 100%);
+    -webkit-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+          
+    // &:nth-child(odd)
+    //     background-image: linear-gradient(180deg, rgb(34, 0, 27), rgb(21, 17, 84) 100%);
+    //     background: -webkit-linear-gradient(180deg, rgb(34, 0, 27), rgb(21, 17, 84) 100%);
+    //     -webkit-transition: opacity 1s ease-in-out;
+    //     transition: opacity 1s ease-in-out;
+    //     &.for-changing-color
+    //         &:hover
+    //             opacity: 1
+    //             background-image: linear-gradient(0deg, rgb(34, 0, 27), rgb(21, 17, 84) 100%);
+    //             background: -webkit-linear-gradient(0deg, rgb(34, 0, 27), rgb(21, 17, 84) 100%);
+    //             -webkit-transition: opacity 1s ease-in-out;
+    //             transition: opacity 1s ease-in-out;
+                
+.bgcolor
+    background-image: linear-gradient(0deg, rgb(34, 0, 27), rgb(21, 17, 84) 100%);
+    background: -webkit-linear-gradient(0deg, rgb(34, 0, 27), rgb(21, 17, 84) 100%);
+    opacity: 1
+
+.bgcolor2
+    background-image: linear-gradient(180deg, rgb(34, 0, 27), rgb(21, 17, 84) 100%);
+    background: -webkit-linear-gradient(180deg, rgb(34, 0, 27), rgb(21, 17, 84) 100%);
+    opacity: 1
+
+.bgcolor3
+    background-color: #eee
+
+.container2
+    max-width: 70%
+    margin: 0 auto
+    img
+        max-width: 100%
+        height: auto
+    .square
+        p
+            padding: 30px
+    
+.container3
+    margin: 0 auto
+    .img-circle
+        width: 200px;
+        height: 200px
+        background-image: url('../../img/people.jpg')
+        background-size: cover
+        border-radius: 50%
+        border: 3px solid $--color1
+        margin: 0 auto
+    p
+        text-align: justify
+
+
+.buy
+    padding: 0 0 100px 0
+    img
+        max-width: 80%
+        height: auto
+        user-select: none
+    
+
+.item-list
+    ul
+        margin: 0
+        padding: 0
+        list-style: none
+        li
+            display: inline-block
+            margin: 0 10px 
+            padding: 10px
+            border: 2px solid #fff
+            cursor: pointer
+            transition: all .15s linear
+            a
+                text-decoration: none
+                i
+                    font-size: 20px
+                    color: #fff
+            &:hover
+                border: 2px solid #fff
+                background-color: #000
+            &:hover i
+                color: #fff
+                transition: all .15s linear
